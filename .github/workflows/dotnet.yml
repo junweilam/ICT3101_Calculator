@@ -22,7 +22,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ./ICT3101_Calculator/
+        working-directory: ICT3101_Calculator/
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -32,8 +32,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: NUnit Tests
         working-directory: ICT3101_Calculator.UnitTests/
-        run: dotnet test --no-build --verbosity detailed
+        run: dotnet test --no-build --verbosity normal
 
       - name: SpecFlow Tests
         working-directory: SpecFlowCalculatorTests/
-        run: dotnet test --no-build --verbosity detailed
+        run: dotnet test --no-build --verbosity normal
