@@ -18,5 +18,33 @@ public class AdditionalCalculatorTests
             fr.Read("MagicNumbers.txt")).Returns(new string[4] { "3", "4", "6", "3" });
         _calculator = new Calculator();
     }
+    
+    
+    [Test]
+    public void GenMagicNum_WhenGivenPositive()
+    {
+        // Act
+        double result = _calculator.GenMagicNum(1, _mockFileReader.Object);
+            
+        // Assert
+        Assert.That(result, Is.EqualTo(8));
+    }
+
+    [Test]
+    public void GenMagicNum_WhenGivenNegative()
+    {
+        // Act
+        double result = _calculator.GenMagicNum(-1, _mockFileReader.Object);
+            
+        // Assert
+        Assert.That(result, Is.EqualTo(-0));
+    }
+
+    [Test]
+    public void GenMagicNum_WhenGivenMoreThanTxt()
+    {
+        // Assert
+        Assert.That(() => _calculator.GenMagicNum(5, _mockFileReader.Object), Throws.ArgumentException);
+    }
 }
 
