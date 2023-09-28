@@ -20,9 +20,9 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # defaults:
-    #   run:
-    #     working-directory: ./ICT3101_Calculator/
+    defaults:
+      run:
+        working-directory: ./ICT3101_Calculator/
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -36,8 +36,8 @@ jobs:
           
       # Runs a single command using the runners shell
       - name: NUnit Tests
-        working-directory: ICT3101_Calculator.UnitTests/
-        run: dotnet test ICT3101_Calculator.UnitTests.csproj --no-build --verbosity diagnostic
+        working-directory: ICT3101_Calculator.UnitTests/ICT3101_Calculator.UnitTests.csproj
+        run: dotnet test --no-build --verbosity normal
         
       - name: SpecFlow Tests
         working-directory: SpecFlowCalculatorTests/
