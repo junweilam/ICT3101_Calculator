@@ -1,0 +1,19 @@
+Epic: 
+- Defect Density Calculator
+- SSI Calculation for Successive Releases
+- Musa Logarithmic Model Integration
+
+
+User Stories:
+- As a system quality engineer
+  I want to calculate the defect density of a system using the calculator
+ 
+- As a system quality engineer
+  I want to calculate the new total number of SSI for successive system
+  releases using the calculator
+ 
+- As a system quality engineer
+  I want to use the Musa Logarithmic model calculations to calculate 
+  failure intensity and the number of expected failures using the calculator
+  with one command
+ 
