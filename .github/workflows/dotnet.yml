@@ -1,4 +1,4 @@
-# This is a basic workflow to help you get started with Actions
+y# This is a basic workflow to help you get started with Actions
 
 name: CI
 
@@ -37,8 +37,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: NUnit Tests
         working-directory: ICT3101_Calculator.UnitTests/
-        run: dotnet test ICT3101_Calculator.UnitTests.csproj --no-build normal 
+        run: dotnet test /ICT3101_Calculator.UnitTests/ICT3101_Calculator.UnitTests.csproj --no-build --verbosity normal 
 
       - name: SpecFlow Tests
         working-directory: SpecFlowCalculatorTests/
-        run: dotnet test --no-build normal
+        run: dotnet test --no-build --verbosity normal
