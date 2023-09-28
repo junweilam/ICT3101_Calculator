@@ -37,7 +37,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: NUnit Tests
         working-directory: ICT3101_Calculator.UnitTests/
-        run: dotnet test ICT3101_Calculator.UnitTests.csproj --no-build normal 
+        run: dotnet ICT3101_Calculator.UnitTests.csproj --no-build normal 
 
       - name: SpecFlow Tests
         working-directory: SpecFlowCalculatorTests/
