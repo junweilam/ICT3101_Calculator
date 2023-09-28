@@ -208,12 +208,11 @@ public class Calculator
         //Dependency ---------------------------
         // FileReader getTheMagic = new FileReader();
         //----------------------------------------
-        string[] magicStrings = fileReader.Read("../../../../ICT3101_Calculator.UnitTests/MagicNumbers.txt");
+        string[] magicStrings = fileReader.Read("MagicNumbers.txt");
 
         if ((choice >= 0) && (choice > magicStrings.Length))
         {
             throw new ArgumentException("Input is larger than txt");
- 
         }
         if ((choice >= 0) && (choice < magicStrings.Length))
         {

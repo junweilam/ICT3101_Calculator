@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "7KVosu904kZFFkouqQZGf/s5i4qPBO6HxDZ2mI8Mv7Q1VuGcSHez8/p+4nOuRmDG2Aw+O7uIIWHG3eLDOv1n0Q==",
+  "dgSpecHash": "riATgN2GgpDTjyLDumiov4xV0M+6MoNAeCedhVXTYwBIhWFNqELNC8AjfWxHBaUE0PhIuI0dIhZEKmsBZF91ew==",
   "success": true,
   "projectFilePath": "/Users/lamjunwei/Projects/ICT3101_Calculator/ICT3101_Calculator.UnitTests/ICT3101_Calculator.UnitTests.csproj",
   "expectedPackageFiles": [
     "/Users/lamjunwei/.nuget/packages/bodi/1.5.0/bodi.1.5.0.nupkg.sha512",
+    "/Users/lamjunwei/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/Users/lamjunwei/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
     "/Users/lamjunwei/.nuget/packages/fluentassertions/6.12.0/fluentassertions.6.12.0.nupkg.sha512",
     "/Users/lamjunwei/.nuget/packages/gherkin/19.0.3/gherkin.19.0.3.nupkg.sha512",
@@ -16,6 +17,7 @@
     "/Users/lamjunwei/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "/Users/lamjunwei/.nuget/packages/microsoft.testplatform.objectmodel/17.7.2/microsoft.testplatform.objectmodel.17.7.2.nupkg.sha512",
     "/Users/lamjunwei/.nuget/packages/microsoft.testplatform.testhost/17.7.2/microsoft.testplatform.testhost.17.7.2.nupkg.sha512",
+    "/Users/lamjunwei/.nuget/packages/moq/4.20.69/moq.4.20.69.nupkg.sha512",
     "/Users/lamjunwei/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512",
     "/Users/lamjunwei/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
     "/Users/lamjunwei/.nuget/packages/nuget.frameworks/6.5.0/nuget.frameworks.6.5.0.nupkg.sha512",
@@ -54,6 +56,7 @@
     "/Users/lamjunwei/.nuget/packages/system.configuration.configurationmanager/4.5.0/system.configuration.configurationmanager.4.5.0.nupkg.sha512",
     "/Users/lamjunwei/.nuget/packages/system.diagnostics.debug/4.3.0/system.diagnostics.debug.4.3.0.nupkg.sha512",
     "/Users/lamjunwei/.nuget/packages/system.diagnostics.diagnosticsource/4.3.0/system.diagnostics.diagnosticsource.4.3.0.nupkg.sha512",
+    "/Users/lamjunwei/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "/Users/lamjunwei/.nuget/packages/system.diagnostics.tracing/4.3.0/system.diagnostics.tracing.4.3.0.nupkg.sha512",
     "/Users/lamjunwei/.nuget/packages/system.dynamic.runtime/4.0.11/system.dynamic.runtime.4.0.11.nupkg.sha512",
     "/Users/lamjunwei/.nuget/packages/system.globalization/4.3.0/system.globalization.4.3.0.nupkg.sha512",

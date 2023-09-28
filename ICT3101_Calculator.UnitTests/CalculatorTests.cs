@@ -1,16 +1,21 @@
 ﻿using ICT3101_Calculator;
 using NUnit.Framework;
+using Moq;
 
 namespace ICT3101_Caculator.UnitTests
 {
     public class CalculatorTests
     {
         private Calculator _calculator;
+        private Mock<IFileReader> _mockFileReader;
         [SetUp]
         public void Setup()
         {
             // Arrange
             _calculator = new Calculator();
+            _mockFileReader = new Mock<IFileReader>();
+            _mockFileReader.Setup(fr =>
+                fr.Read("MagicNumbers.txt")).Returns(new string[4] { "3", "4", "6", "3" });
         }
         [Test]
         public void Add_WhenAddingTwoNumbers_ResultEqualToSum()
@@ -188,7 +193,7 @@ namespace ICT3101_Caculator.UnitTests
         public void GenMagicNum_WhenGivenPositive()
         {
             // Act
-            double result = _calculator.GenMagicNum(1, new FileReader());
+            double result = _calculator.GenMagicNum(1, _mockFileReader.Object);
             
             // Assert
             Assert.That(result, Is.EqualTo(8));
@@ -198,7 +203,7 @@ namespace ICT3101_Caculator.UnitTests
         public void GenMagicNum_WhenGivenNegative()
         {
             // Act
-            double result = _calculator.GenMagicNum(-1, new FileReader());
+            double result = _calculator.GenMagicNum(-1, _mockFileReader.Object);
             
             // Assert
             Assert.That(result, Is.EqualTo(-0));
@@ -208,7 +213,7 @@ namespace ICT3101_Caculator.UnitTests
         public void GenMagicNum_WhenGivenMoreThanTxt()
         {
             // Assert
-            Assert.That(() => _calculator.GenMagicNum(5, new FileReader()), Throws.ArgumentException);
+            Assert.That(() => _calculator.GenMagicNum(5, _mockFileReader.Object), Throws.ArgumentException);
         }
 
     }
