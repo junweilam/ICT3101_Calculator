@@ -33,11 +33,15 @@ jobs:
         uses: actions/setup-dotnet@v2
         with:
           dotnet-version: '6.0'
+
+      - name: Install NUnit.ConsoleRunner
+        run: nuget install NUnit.ConsoleRunner -Version 3.16.3 -DirectDownload -OutputDirectory .
           
       # Runs a single command using the runners shell
       - name: NUnit Tests
         working-directory: ICT3101_Calculator.UnitTests
-        run: dotnet test --no-build --verbosity normal
+        # run: dotnet test --no-build --verbosity normal
+        run: ./NUnit.ConsoleRunner.3.16.3/tools/nunit3-console.exe ./ICT3101_Calculator.UnitTests/obj/Debug/net6.0/ICT3101_Calculator.UnitTests.dll
         
       - name: SpecFlow Tests
         working-directory: SpecFlowCalculatorTests/
