@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZzHwqbCVmUeEFc8siG0UGmOlfnIMQANinWc0HN7/x7098cxrFk22Gkcbz+tnm3KHlP6azf5tg+B31THh/7cTjw==",
+  "dgSpecHash": "ygEPgPrOV/2bRogPCMWyf5FN40hBjBBCQi3jwl5hFjdwgCTMBmzlQWn4Bq5q2U+q9EeZPmgdrxUSixah3wncMg==",
   "success": true,
   "projectFilePath": "/Users/lamjunwei/Projects/ICT3101_Calculator/SpecFlowCalculatorTests/SpecFlowCalculatorTests.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,7 @@
     "/Users/lamjunwei/.nuget/packages/nuget.frameworks/6.5.0/nuget.frameworks.6.5.0.nupkg.sha512",
     "/Users/lamjunwei/.nuget/packages/nunit/3.13.2/nunit.3.13.2.nupkg.sha512",
     "/Users/lamjunwei/.nuget/packages/nunit.console/3.12.0/nunit.console.3.12.0.nupkg.sha512",
-    "/Users/lamjunwei/.nuget/packages/nunit.consolerunner/3.12.0/nunit.consolerunner.3.12.0.nupkg.sha512",
+    "/Users/lamjunwei/.nuget/packages/nunit.consolerunner/3.16.3/nunit.consolerunner.3.16.3.nupkg.sha512",
     "/Users/lamjunwei/.nuget/packages/nunit.extension.nunitprojectloader/3.6.0/nunit.extension.nunitprojectloader.3.6.0.nupkg.sha512",
     "/Users/lamjunwei/.nuget/packages/nunit.extension.nunitv2driver/3.8.0/nunit.extension.nunitv2driver.3.8.0.nupkg.sha512",
     "/Users/lamjunwei/.nuget/packages/nunit.extension.nunitv2resultwriter/3.6.0/nunit.extension.nunitv2resultwriter.3.6.0.nupkg.sha512",

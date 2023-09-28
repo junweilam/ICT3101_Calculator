@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[3.13.2, )"
             },
+            "NUnit.ConsoleRunner": {
+              "target": "Package",
+              "version": "[3.16.3, )"
+            },
             "NUnit3TestAdapter": {
               "target": "Package",
               "version": "[4.0.0, )"
@@ -142,6 +146,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.7.2, )"
+            },
+            "NUnit.ConsoleRunner": {
+              "target": "Package",
+              "version": "[3.16.3, )"
             },
             "SpecFlow": {
               "target": "Package",

@@ -28,6 +28,6 @@
     <PkgNUnit_Extension_NUnitV2ResultWriter Condition=" '$(PkgNUnit_Extension_NUnitV2ResultWriter)' == '' ">/Users/lamjunwei/.nuget/packages/nunit.extension.nunitv2resultwriter/3.6.0</PkgNUnit_Extension_NUnitV2ResultWriter>
     <PkgNUnit_Extension_NUnitV2Driver Condition=" '$(PkgNUnit_Extension_NUnitV2Driver)' == '' ">/Users/lamjunwei/.nuget/packages/nunit.extension.nunitv2driver/3.8.0</PkgNUnit_Extension_NUnitV2Driver>
     <PkgNUnit_Extension_NUnitProjectLoader Condition=" '$(PkgNUnit_Extension_NUnitProjectLoader)' == '' ">/Users/lamjunwei/.nuget/packages/nunit.extension.nunitprojectloader/3.6.0</PkgNUnit_Extension_NUnitProjectLoader>
-    <PkgNUnit_ConsoleRunner Condition=" '$(PkgNUnit_ConsoleRunner)' == '' ">/Users/lamjunwei/.nuget/packages/nunit.consolerunner/3.12.0</PkgNUnit_ConsoleRunner>
+    <PkgNUnit_ConsoleRunner Condition=" '$(PkgNUnit_ConsoleRunner)' == '' ">/Users/lamjunwei/.nuget/packages/nunit.consolerunner/3.16.3</PkgNUnit_ConsoleRunner>
   </PropertyGroup>
 </Project>

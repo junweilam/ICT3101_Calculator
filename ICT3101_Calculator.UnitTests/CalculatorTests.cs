@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using ICT3101_Calculator;
+using NUnit.Framework;
 
 namespace ICT3101_Caculator.UnitTests
 {
@@ -183,6 +184,32 @@ namespace ICT3101_Caculator.UnitTests
             Assert.That(() => _calculator.Factorial(2.11), Throws.ArgumentException);
         }
 
+        [Test]
+        public void GenMagicNum_WhenGivenPositive()
+        {
+            // Act
+            double result = _calculator.GenMagicNum(1, new FileReader());
+            
+            // Assert
+            Assert.That(result, Is.EqualTo(8));
+        }
+
+        [Test]
+        public void GenMagicNum_WhenGivenNegative()
+        {
+            // Act
+            double result = _calculator.GenMagicNum(-1, new FileReader());
+            
+            // Assert
+            Assert.That(result, Is.EqualTo(-0));
+        }
+
+        [Test]
+        public void GenMagicNum_WhenGivenMoreThanTxt()
+        {
+            // Assert
+            Assert.That(() => _calculator.GenMagicNum(5, new FileReader()), Throws.ArgumentException);
+        }
 
     }
 }

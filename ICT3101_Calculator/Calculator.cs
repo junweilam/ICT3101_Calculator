@@ -1,4 +1,6 @@
 ﻿using System;
+using ICT3101_Calculator;
+
 public class Calculator
 {
     public Calculator() { }
@@ -42,6 +44,9 @@ public class Calculator
             case "Availability":
                 result = Availability(num1, num2);
                 break;
+            // case "Gen":
+            //     result = GenMagicNum(num1);
+            //     break;
 
             // Return text for an incorrect option entry.
             default:
@@ -194,5 +199,28 @@ public class Calculator
     public double LogModelFailureDensity(double num1, double num2, double num3)
     {
         return Math.Round(num1 * Math.Exp(-num2 * num3),2);
+    }
+
+    public double GenMagicNum(double input, IFileReader fileReader)
+    {
+        double result = 0;
+        int choice = Convert.ToInt16(input);
+        //Dependency ---------------------------
+        // FileReader getTheMagic = new FileReader();
+        //----------------------------------------
+        string[] magicStrings = fileReader.Read("../../../../ICT3101_Calculator.UnitTests/MagicNumbers.txt");
+
+        if ((choice >= 0) && (choice > magicStrings.Length))
+        {
+            throw new ArgumentException("Input is larger than txt");
+ 
+        }
+        if ((choice >= 0) && (choice < magicStrings.Length))
+        {
+            result = Convert.ToDouble(magicStrings[choice]);
+        }
+
+        result = (result > 0) ? (2 * result) : (-2 * result);
+        return result;
     }
 }
