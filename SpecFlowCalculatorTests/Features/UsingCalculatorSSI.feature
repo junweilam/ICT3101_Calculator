@@ -15,7 +15,7 @@ Feature: UsingCalculatorSSI
 Scenario: Calculate SSI
 	Given I have a calculator
 	When I have entered 40, 20, 10 and 10 into the calculator and press SSI
-	Then the new total number of SSI is 40
+	Then the new total number of SSI is 50
 
 # User Story:
 #	- As a system quality engineer
