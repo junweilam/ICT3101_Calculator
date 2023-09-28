@@ -39,6 +39,11 @@ jobs:
         working-directory: ICT3101_Calculator.UnitTests/
         run: dotnet test ICT3101_Calculator.UnitTests.csproj --no-build --verbosity normal 
 
+      - name: Publish NUnit Test Results
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: ./ICT3101_Calculator.UnitTests/TestResults
       - name: SpecFlow Tests
         working-directory: SpecFlowCalculatorTests/
         run: dotnet test --no-build --verbosity normal
