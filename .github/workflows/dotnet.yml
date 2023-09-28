@@ -33,11 +33,21 @@ jobs:
         uses: actions/setup-dotnet@v2
         with:
           dotnet-version: '6.x'
+
+      - name: Publish Test Results
+        uses: actions/upload-test-results@v2
+        with:
+          test-results-files: |
+            **/TestResults/*.trx
+        if: always()
           
       # Runs a single command using the runners shell
       - name: NUnit Tests
         working-directory: ICT3101_Calculator.UnitTests/
-        run: dotnet test ICT3101_Calculator.UnitTests.csproj --no-build --verbosity normal
+        run: dotnet test ICT3101_Calculator.UnitTests.csproj --no-build --verbosity normal > test-output.txt
+
+      - name: Display Test Output
+        run: cat test-output.txt
 
       - name: SpecFlow Tests
         working-directory: SpecFlowCalculatorTests/
