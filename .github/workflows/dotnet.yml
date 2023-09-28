@@ -22,7 +22,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: ICT3101_Calculator/
+        working-directory: ./ICT3101_Calculator/
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
