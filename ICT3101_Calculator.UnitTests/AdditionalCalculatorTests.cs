@@ -46,5 +46,11 @@ public class AdditionalCalculatorTests
         // Assert
         Assert.That(() => _calculator.GenMagicNum(5, _mockFileReader.Object), Throws.ArgumentException);
     }
+
+    [Test]
+    public void GenMagicNum_WhenGivenDecimal()
+    {
+        
+    }
 }
 

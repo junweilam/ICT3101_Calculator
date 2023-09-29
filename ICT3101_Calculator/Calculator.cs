@@ -204,6 +204,7 @@ public class Calculator
     public double GenMagicNum(double input, IFileReader fileReader)
     {
         double result = 0;
+        // Test
         int choice = Convert.ToInt16(input);
         //Dependency ---------------------------
         // FileReader getTheMagic = new FileReader();
