@@ -205,6 +205,15 @@ public class Calculator
     {
         double result = 0;
         // Test
+        try
+        {
+            int input2;
+            input2 = int.Parse(input.ToString());
+        }
+        catch
+        {
+            throw new ArgumentException("Input is not integer");
+        }
         int choice = Convert.ToInt16(input);
         //Dependency ---------------------------
         // FileReader getTheMagic = new FileReader();

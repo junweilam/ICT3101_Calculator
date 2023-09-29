@@ -15,7 +15,7 @@ public class AdditionalCalculatorTests
     {
         _mockFileReader = new Mock<IFileReader>();
         _mockFileReader.Setup(fr =>
-            fr.Read("MagicNumbers.txt")).Returns(new string[4] { "3", "4", "6", "3" });
+            fr.Read("MagicNumbers.txt")).Returns(new string[5] { "3", "4", "6", "3", "-2" });
         _calculator = new Calculator();
     }
     
@@ -44,13 +44,31 @@ public class AdditionalCalculatorTests
     public void GenMagicNum_WhenGivenMoreThanTxt()
     {
         // Assert
-        Assert.That(() => _calculator.GenMagicNum(5, _mockFileReader.Object), Throws.ArgumentException);
+        Assert.That(() => _calculator.GenMagicNum(6, _mockFileReader.Object), Throws.ArgumentException);
     }
 
     [Test]
     public void GenMagicNum_WhenGivenDecimal()
     {
-        
+        Assert.That(() => _calculator.GenMagicNum(0.5, _mockFileReader.Object), Throws.ArgumentException);
     }
+
+    [Test]
+    public void GenMagicNum_WhenMagicNegative()
+    {
+        // Act 
+        double result = _calculator.GenMagicNum(4, _mockFileReader.Object);
+        
+        // Assert
+        Assert.That(result, Is.EqualTo(4));
+    }
+
+    // [Test]
+    // public void GenMagicNum_WhenMagicString()
+    // {
+    //     Assert.That(() => _calculator.GenMagicNum(5, _mockFileReader.Object), Throws.ArgumentException);
+    // }
+    //
+    //
 }
 
